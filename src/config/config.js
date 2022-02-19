@@ -1,0 +1,1 @@
+export const  noPoster = "https://www.prokerala.com/movies/assets/img/no-poster-available.jpg"
