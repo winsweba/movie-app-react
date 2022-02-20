@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import BasicPagination from '../components/BasicPagination';
-import MovieCard from '../components/MovieCard';
-import ChipsAction from '../components/ChipingAcation';
+import BasicPagination from '../components/Pagination/BasicPagination';
+import ChipsAction from '../components/Chipping/ChipingAcation';
+import MovieCard from '../components/MovieCard/MovieCard';
 import useGenre from './hooks/useGenre';
 
 
@@ -42,7 +42,7 @@ export default function Movies() {
   ))
   return (
     <div className='container'>
-      <div>Movie</div>
+      <div className='head'>Movie Shows</div>
 
       <ChipsAction
       type="tv"
@@ -57,7 +57,7 @@ export default function Movies() {
       
       {showMovies}
      { 
-     numOfPage === 0  ? "No" :
+     numOfPage === 0  ? <div className='no-result'>No Result Found</div>  :
      <BasicPagination setPage={setPage} numOfPage={numOfPage}/>}
       
   

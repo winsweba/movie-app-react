@@ -1,8 +1,8 @@
 import React from 'react'
-import { noPoster } from '../config/config'
-import Image from "../images/convert.png"
-import ContentModal from './ContentModal'
+// import Image from "../images/convert.png"
+import ContentModal from '../ContentModal/ContentModal'
 import './MovieCard.css'
+import { noPoster } from '../../config/config'
 
 
 

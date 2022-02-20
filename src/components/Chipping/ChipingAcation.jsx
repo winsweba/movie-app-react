@@ -70,7 +70,7 @@ export default function ChipsAction({
   ));
 
   return (
-    <div style={{ padding: "6px 0" }}>
+    <div style={{ padding: "6px 0" , backgroundColor: "rgb(216, 216, 226)"}}>
       <Stack direction="row" spacing={1}>
         {chipRemoveElement}
         {chipAddElement}
